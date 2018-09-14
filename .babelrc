@@ -1,4 +1,4 @@
 {
-  "presets": ["env", "react", "stage-2"],
-  "plugins": ["babel-plugin-inline-import"]
+  "presets": ["env", "react", "stage-0", "airbnb"],
+  "plugins": ["babel-plugin-inline-import", "transform-object-rest-spread"]
 }

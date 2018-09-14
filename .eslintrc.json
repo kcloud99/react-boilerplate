@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["prettier", "react"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": true, "trailingComma": "all" }
+    ],
+    "react/jsx-one-expression-per-line": "off",
+    "no-plusplus": "off",
+    "no-console": "warn",
+    "camelcase": "warn"
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ]
+}
